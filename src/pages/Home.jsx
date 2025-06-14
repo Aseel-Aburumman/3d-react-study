@@ -9,6 +9,7 @@ import Bird from "../models/Bird";
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
+  const [currentStage, setCurrentStage] = useState(1);
 
   const adjustIslandForScreenSize = () => {
     let screenScale;
@@ -88,6 +89,7 @@ const Home = () => {
           <Island
             position={islandPosition}
             scale={islandScale}
+            setCurrentStage={setCurrentStage}
             rotation={islandRotation}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
