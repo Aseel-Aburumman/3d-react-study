@@ -3,9 +3,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
 
 :root {
   --blue-rgb: 237 245 255;
@@ -81,6 +81,8 @@ body:has(.card[data-color="green"]:hover) {
     @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
   }
 } */
+
+
 
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
@@ -183,4 +185,201 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+
+
+
+
+
+.max-container {
+  max-width: 64rem; /* max-w-5xl */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto;
+  padding-left: 2rem; /* px-8 */
+  padding-right: 2rem;
+  padding-bottom: 3rem; /* pb-12 */
+  padding-top: 126px; /* !pt-[126px] */
+  min-height: calc(100vh - 80px);
+}
+
+.head-text {
+  font-size: 1.875rem; /* text-3xl */
+  line-height: 2.25rem;
+  font-weight: 600; /* font-semibold */
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 640px) {
+  .head-text {
+    font-size: 3rem; /* sm:text-5xl */
+    line-height: 1.2; /* sm:leading-snug */
+  }
+}
+
+.subhead-text {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 640px) {
+  .subhead-text {
+    font-size: 1.875rem; /* sm:text-3xl */
+  }
+}
+
+.blue-gradient_text {
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.input {
+  background-color: white;
+  border: 1px solid #d5dae1;
+  color: #1d2235;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  width: 100%;
+  margin-top: 0.625rem;
+  font-weight: 400;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.textarea {
+  background-color: white;
+  border: 1px solid #d5dae1;
+  color: #1d2235;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  width: 100%;
+  margin-top: 0.625rem;
+  font-weight: 400;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+  color: white;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .btn {
+    width: auto;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  background: transparent;
+  z-index: 10;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.5rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 42rem;
+  padding: 1rem 2rem 3rem;
+  position: relative;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  background-color: #1e90ff; /* neo-brutalism-blue */
+}
+
+.neo-btn {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #2b77e7;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: 90%;
+}
+
+@media (min-width: 640px) {
+  .neo-btn {
+    width: 50%;
+  }
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cta {
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+}
+
+.cta-text {
+  font-weight: 800;
+  font-size: 1.875rem;
+  color: #1d2235;
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-text {
+    text-align: left;
+  }
 }
